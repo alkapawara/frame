@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+    <title>Diabetes Day</title>
+  </head>
+  <style>
+    body {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #ffffff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  </style>
+  <body>
+</html>
+<div class="frame2" id="form">
+<img src="./frm2/fr20.png" class="frame-bg-main"/>
+<img src="./frm2/fr22.png" class="fr2"/>
+<div class="fr2-title">
+    <h3>Dr.<span>Raaz Jayseval</span></h3>
+    <span>M.B.B.s</span>
+</div>
+<div class="circul-box-fr2">
+<div class="circul-subox-fr2">
+    <img src="./frm2/dr.jpg">
+</div>
+</div>
+
+</div>
+<button id="dl-png"> download</button>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js">
+</script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+   
+
+<script>
+  document.getElementById('dl-png').onclick=function(){
+    const screenshotTarget=document.getElementById('form');
+    html2canvas(screenshotTarget).then((canvas)=>{
+       const base64image=canvas.toDataURL('image/png');
+       var anchor=document.createElement('a');
+       anchor.setAttribute('href',base64image);
+       anchor.setAttribute('download','my-image.png');
+       anchor.click();
+       anchor.remove();
+
+    });
+  }
+</script>
+  </body>
+</html>
