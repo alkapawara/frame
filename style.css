@@ -177,6 +177,7 @@ ul {
     width: 520px;
     border-radius: 50%;
     position: relative;
+    padding: 12px;
 }
 /* img.frm3-title{
     position: absolute;
@@ -322,7 +323,7 @@ img.frm3-title.frm3-title3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    padding: 12px;
 }
 img.frame-bg-main {
     position: relative;
@@ -511,6 +512,7 @@ img.fr42 {
         width: 500px;
         border-radius: 50%;
         position: relative;
+        padding: 12px;
     }
     img.frame-bg-main {
         position: relative;
@@ -581,6 +583,7 @@ img.fr42 {
         width: 400px;
         border-radius: 50%;
         position: relative;
+        padding: 12px;
     }
     .img-show {
         /* position: absolute; */
@@ -656,6 +659,7 @@ img.fr42 {
         width: 320px;
         border-radius: 50%;
         position: relative;
+        padding: 12px;
     }
     .img-show {
         /* position: absolute; */
